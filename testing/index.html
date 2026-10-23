@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Karl Dominic S. Bautista | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas>
+
+<nav aria-label="Main">
+  <b>PORTFOLIO</b>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <span class="tag">3rd-year BSIT student</span>
+      <h1>Karl Dominic S. Bautista<small>Student portfolio</small></h1>
+      <div class="role" aria-live="polite"><span id="typed"></span><i></i></div>
+      <div class="btns">
+        <a class="btn p" href="#about">About me</a>
+        <a class="btn g" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <figure class="photo">
+      <img src="photo.png" alt="Portrait of Karl, smiling, wearing glasses and a blue striped shirt">
+    </figure>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="grid">
+      <div class="panel wide">
+        <p>Hi! I’m Karl Dominic Bautista, a 3rd-year college student pursuing a Bachelor of Science in Information Technology (BSIT). I’m currently building my skills in HTML, CSS, and JavaScript, and I’m passionate about creating clean, responsive, and interactive websites. I’m eager to learn, grow, and turn my growing knowledge into great digital experiences!</p>
+      </div>
+      <div class="panel">
+        <h3>Dream job</h3>
+        <p class="dream">Front-end developer</p>
+      </div>
+      <div class="panel">
+        <h3>Skills</h3>
+        <div class="bars" id="bars">
+          <div class="bar"><span>HTML</span><div><em data-w="85"></em></div></div>
+          <div class="bar"><span>CSS</span><div><em data-w="80"></em></div></div>
+          <div class="bar"><span>JavaScript</span><div><em data-w="70"></em></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="background">
+    <h2>Background</h2>
+    <div class="grid">
+      <div class="panel">
+        <h3>Personal info</h3>
+        <dl>
+          <dt>Name</dt><dd>Karl Dominic S. Bautista</dd>
+          <dt>Age</dt><dd>23</dd>
+          <dt>Address</dt><dd>Port Area, Manila</dd>
+        </dl>
+      </div>
+      <div class="panel">
+        <h3>Hobbies</h3>
+        <div class="chips">
+          <span class="chip">Playing online games</span>
+          <span class="chip">Watching movies</span>
+          <span class="chip">Coding</span>
+          <span class="chip">Listening to music</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="tl">
+      <li class="panel"><span class="yr">2007 – 2016</span><h3>Ellinwood Christian School</h3></li>
+      <li class="panel"><span class="yr">2016 – 2022</span><h3>Adamson University</h3><p>Senior High School (ABM)</p></li>
+      <li class="panel"><span class="yr">2022 – 2023</span><h3>Lyceum of the Philippines University</h3><p>Culinary Arts</p></li>
+      <li class="panel now"><span class="yr">2024 – Present</span><h3>Philippine Christian University</h3><p>BSIT</p></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="panel">
+      <h3>Send a message</h3>
+      <p>Want to work together or just say hi? Email me.</p>
+      <a class="mail" href="mailto:karldominicbautista0811@gmail.com">karldominicbautista0811@gmail.com</a><br>
+      <a class="btn p" href="mailto:karldominicbautista0811@gmail.com">Send email</a>
+    </div>
+  </section>
+</main>
+
+<footer>© Karl Dominic S. Bautista</footer>
+
+<!-- FLOATING AI CHAT WIDGET -->
+<div id="ai-chat-widget">
+  <button id="chat-toggle-btn" aria-label="Open AI Chat">💬</button>
+  
+  <div id="chat-popup" class="chat-popup hidden">
+    <div class="chat-popup-header">
+      <h3>AI Assistant</h3>
+      <button id="chat-close-btn" aria-label="Close Chat">&times;</button>
+    </div>
+    
+    <div id="chat-box" class="chat-box">
+      <div class="message ai-message">Hello! I'm Karl's AI assistant powered by Cohere. How can I help you?</div>
+    </div>
+
+    <div class="chat-input-area">
+      <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
+      <button id="send-btn" class="btn p">Send</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
